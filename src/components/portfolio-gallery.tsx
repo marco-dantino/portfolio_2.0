@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
+import { LiquidButton } from "./liquid-glass-button";
 
 interface PortfolioGalleryProps {
 	title?: string;
@@ -106,13 +107,10 @@ export function PortfolioGallery({
 					<h2 className="text-4xl md:text-6xl font-bold text-foreground mb-8 text-balance">
 						{title}
 					</h2>
-
-					<Link
-						href={archiveButton.href}
-						className="inline-flex items-center gap-3 bg-foreground text-background px-6 py-3 rounded-full font-medium hover:bg-foreground/90 transition-colors group mb-20"
-					>
-						<span>{archiveButton.text}</span>
-						<ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+					<Link href={archiveButton.href}>
+						<LiquidButton>
+							<span>{archiveButton.text}</span>
+						</LiquidButton>
 					</Link>
 				</div>
 

@@ -1,15 +1,42 @@
+"use client";
+
 import { Icons } from "@/components/icons";
 import { LiquidButton } from "@/components/liquid-glass-button";
 import { AnimatedCarousel } from "@/components/logo-carousel";
 import { PortfolioGallery } from "@/components/portfolio-gallery";
 import { SparklesCore } from "@/components/ui/sparkles";
 import { cn } from "@/lib/utils";
+import { useEffect, useRef } from "react";
 import { unstable_ViewTransition as ViewTransition } from "react";
+
+function AgeCounter() {
+	const counterRef = useRef<HTMLDivElement>(null);
+
+	useEffect(() => {
+		const startYear = new Date("2005-03-31");
+		const msPerYear = 1000 * 60 * 60 * 24 * 365.25;
+
+		const updateAge = () => {
+			const now = new Date();
+			const years = now.getTime() - startYear.getTime();
+			const age = years / msPerYear;
+			if (counterRef.current) {
+				counterRef.current.textContent = `I am ${age.toFixed(9)} years`;
+			}
+		};
+
+		const interval = setInterval(updateAge, 50);
+		return () => clearInterval(interval);
+	}, []);
+
+	return <div ref={counterRef} className="counter" />;
+}
 
 export default function Home() {
 	return (
 		<ViewTransition name="page">
 			<main className={cn("flex flex-1 flex-col items-center")}>
+				<AgeCounter />
 				<div className="h-[40rem] w-full flex flex-col items-center justify-center overflow-hidden rounded-md">
 					<h1 className="md:text-7xl text-3xl lg:text-9xl font-bold text-center text-white relative z-20">
 						Marco D'Antino
