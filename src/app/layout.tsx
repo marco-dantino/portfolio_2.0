@@ -31,7 +31,7 @@ export const metadata: Metadata = {
 			name: "colidevs team",
 		},
 	],
-	creator: "colidevs",
+	creator: "marco",
 	publisher: "colidevs",
 	openGraph: {
 		type: "website",

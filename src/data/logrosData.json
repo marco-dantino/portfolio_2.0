@@ -1,0 +1,34 @@
+[
+	{
+		"id": 1,
+		"titulo": "Checkout Pro Mercado Pago",
+		"descripcion": "Cerficicado de mercado pago oficial para la validez de sus integraciones.",
+		"fecha": "3 de Marco de 2026",
+		"imagen": "certificado-mercadopago",
+		"sitioWeb": "https://www.mercadopago.com.ar/partners/developers/certifications/certificate/cert_efaccd3e172611f1845842599edf65b5"
+	},
+	{
+		"id": 2,
+		"titulo": "FrontEnd - JavaScript, Jquery y React (Basico-Intermedio)",
+		"descripcion": "Duración: 60 horas, impartido virtualmente por FORMAS de FIDESAL.",
+		"fecha": "20 de marzo de 2026",
+		"imagen": "certificado-gestiontiempo",
+		"sitioWeb": "https://openbadgefactory.com/obv3/credentials/7b568e0b4b9dc1cd06eef0d01c50855c18fb289e.html"
+	},
+	{
+		"id": 3,
+		"titulo": "Diseño de Experiencia de Usuario (UX) de Google",
+		"descripcion": "Desarrollo de habilidades completas de diseño UX.",
+		"fecha": "20 de marzo de 2026",
+		"imagen": "certificado-trabajoequipo",
+		"sitioWeb": "https://openbadgefactory.com/obv3/credentials/6e4b6dc22eca39998c9f817a77c5294150f2d17a.html"
+	},
+	{
+		"id": 4,
+		"titulo": "Administracion de Proyectos: Principios Basicos",
+		"descripcion": "Cubre iniciación, planificación, presupuestos, riesgos y cambios en proyectos.",
+		"fecha": "05 de junio de 2025",
+		"imagen": "certificado-endeavorargentina",
+		"sitioWeb": "https://view.pok.tech/c/c1690c6f-7659-4912-ac68-f7f5a5396899"
+	}
+]

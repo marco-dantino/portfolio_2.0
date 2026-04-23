@@ -23,6 +23,7 @@ export const Icons = {
 				variant === "nav" ? "w-full h-10" : "",
 				className,
 			)}
+			f
 			src="/colidevs-logo.svg"
 			alt="colidevs logo"
 			width={width}

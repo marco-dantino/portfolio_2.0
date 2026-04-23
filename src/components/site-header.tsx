@@ -41,7 +41,18 @@ export function SiteHeader({ useBorder = false }: Props) {
 									<span className="sr-only">Instagram</span>
 								</Link>
 							</Button>
-							<ModeSwitcher />
+							<Button
+								asChild
+								variant="ghost"
+								size="icon"
+								className="h-8 w-8 px-0"
+							>
+								<Link href="/cv.pdf" target="_blank" rel="noreferrer">
+									<Icons.spinner className="h-4 w-4" />
+									<span className="sr-only">CV</span>
+								</Link>
+							</Button>
+							{/* <ModeSwitcher /> */}
 						</nav>
 					</div>
 				</div>
